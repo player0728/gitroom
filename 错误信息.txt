@@ -16,18 +16,7 @@ PS D:\software\apache-seatunnel-2.3.5> & D:/software/anaconda3/python.exe d:/sof
 ✓ 启动 API 服务器 on http://0.0.0.0:8000
 
 ℹ API 文档: http://0.0.0.0:8000/docs
-INFO:     Started server process [41084]
+INFO:     Started server process [17224]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     127.0.0.1:55112 - "GET /api/git/tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53600 - "GET /ui HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53600 - "GET /api/git/tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53600 - "GET /ui HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53600 - "GET /api/git/tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53121 - "POST /api/git/tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53121 - "GET /api/git/tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53121 - "POST /api/git/tasks/1/start HTTP/1.1" 200 OK
-INFO:     127.0.0.1:53121 - "GET /api/git/tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59526 - "GET /api/git/tasks HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52624 - "GET /api/git/tasks HTTP/1.1" 200 OK
