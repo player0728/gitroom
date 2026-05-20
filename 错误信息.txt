@@ -1,0 +1,699 @@
+ng checkpoint(9223372036854775807/1@1107569287888896001) notify finished!
+2026-05-15 15:24:57,068 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - start notify checkpoint completed, job id: 1107569287888896001, pipeline id: 1, checkpoint id:9223372036854775807
+2026-05-15 15:24:57,071 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - start clean pending checkpoint cause CheckpointCoordinator completed.
+2026-05-15 15:24:57,073 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - Turn checkpoint_state_1107569287888896001_1 state from null to FINISHED
+2026-05-15 15:24:57,134 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-555222] [5.1] taskDone, taskId = 20000, taskGroup = TaskGroupLocation{jobId=1107569287888896001, pipelineId=1, taskGroupId=1}
+2026-05-15 15:24:57,135 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-555222] [5.1] Task TaskGroupLocation{jobId=1107569287888896001, pipelineId=1, taskGroupId=1} complete with state FINISHED
+2026-05-15 15:24:57,135 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel-555222] [5.1] Received task end from execution TaskGroupLocation{jobId=1107569287888896001, pipelineId=1, taskGroupId=1}, state FINISHED
+2026-05-15 15:24:57,136 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107569287888896001), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SplitEnumerator (1/1)] turned from state RUNNING to FINISHED.
+2026-05-15 15:24:57,136 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107569287888896001), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SplitEnumerator (1/1)] state process is stopped
+2026-05-15 15:24:57,137 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107569287888896001), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SplitEnumerator (1/1)] future complete with state FINISHED
+2026-05-15 15:24:57,151 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-555222] [5.1] taskDone, taskId = 40000, taskGroup = TaskGroupLocation{jobId=1107569287888896001, pipelineId=1, taskGroupId=30000}
+2026-05-15 15:24:57,154 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.sink.JdbcMultiTableResourceManager - start close connection poolHikariPool-1
+2026-05-15 15:24:57,154 INFO  org.apache.seatunnel.shade.com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-15 15:24:57,155 INFO  org.apache.seatunnel.shade.com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-15 15:24:57,155 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-555222] [5.1] taskDone, taskId = 50000, taskGroup = TaskGroupLocation{jobId=1107569287888896001, pipelineId=1, taskGroupId=30000}
+2026-05-15 15:24:57,155 INFO  org.apache.seatunnel.engine.core.classloader.DefaultClassLoaderService - Release classloader for job 1107569287888896001 with jars [file:/D:/software/apache-seatunnel-2.3.5/connectors/connector-jdbc-2.3.5.jar]
+2026-05-15 15:24:57,157 INFO  org.apache.seatunnel.engine.core.classloader.DefaultClassLoaderService - recycle classloader for thread BlockingWorker-TaskGroupLocation{jobId=1107569287888896001, pipelineId=1, taskGroupId=30000}
+2026-05-15 15:24:57,157 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-555222] [5.1] Task TaskGroupLocation{jobId=1107569287888896001, pipelineId=1, taskGroupId=30000} complete with state FINISHED
+2026-05-15 15:24:57,157 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel-555222] [5.1] Received task end from execution TaskGroupLocation{jobId=1107569287888896001, pipelineId=1, taskGroupId=30000}, state FINISHED
+2026-05-15 15:24:57,158 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107569287888896001), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SourceTask (1/1)] turned from state RUNNING to FINISHED.
+2026-05-15 15:24:57,158 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107569287888896001), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SourceTask (1/1)] state process is stopped
+2026-05-15 15:24:57,158 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107569287888896001), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SourceTask (1/1)] future complete with state FINISHED
+2026-05-15 15:24:57,158 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107569287888896001), Pipeline: [(1/1)] will end with state FINISHED
+2026-05-15 15:24:57,158 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107569287888896001), Pipeline: [(1/1)] turned from state RUNNING to FINISHED.
+2026-05-15 15:24:57,182 INFO  org.apache.seatunnel.engine.server.master.JobMaster - release the pipeline Job MySQL_to_MySQL_Sync (1107569287888896001), Pipeline: [(1/1)] resource
+2026-05-15 15:24:57,182 INFO  org.apache.seatunnel.engine.server.service.slot.DefaultSlotService - received slot release request, jobID: 1107569287888896001, slot: SlotProfile{worker=[localhost]:5801, slotID=1, ownerJobID=1107569287888896001, assigned=true, resourceProfile=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=0}}, sequence='f381f7d8-a068-4f10-9c58-96b947e083ac'}
+2026-05-15 15:24:57,182 INFO  org.apache.seatunnel.engine.server.service.slot.DefaultSlotService - received slot release request, jobID: 1107569287888896001, slot: SlotProfile{worker=[localhost]:5801, slotID=2, ownerJobID=1107569287888896001, assigned=true, resourceProfile=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=0}}, sequence='f381f7d8-a068-4f10-9c58-96b947e083ac'}
+2026-05-15 15:24:57,183 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107569287888896001), Pipeline: [(1/1)] state process is stop
+2026-05-15 15:24:57,183 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job MySQL_to_MySQL_Sync (1107569287888896001), Pipeline: [(1/1)] future complete with state FINISHED
+2026-05-15 15:24:57,184 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job MySQL_to_MySQL_Sync (1107569287888896001) turned from state RUNNING to FINISHED.
+2026-05-15 15:24:57,184 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job MySQL_to_MySQL_Sync (1107569287888896001) state process is stop
+2026-05-15 15:24:57,191 INFO  org.apache.seatunnel.engine.client.job.ClientJobProxy - Job (1107569287888896001) end with state FINISHED
+2026-05-15 15:24:57,209 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - 
+***********************************************
+           Job Statistic Information
+***********************************************
+Start Time                : 2026-05-15 15:24:55
+End Time                  : 2026-05-15 15:24:57
+Total Time(s)             :                   1
+Total Read Count          :                   8
+Total Write Count         :                   8
+Total Failed Count        :                   0
+***********************************************
+
+2026-05-15 15:24:57,209 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-555222] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is SHUTTING_DOWN
+2026-05-15 15:24:57,210 INFO  com.hazelcast.internal.server.tcp.TcpServerConnection - [localhost]:5801 [seatunnel-555222] [5.1] Connection[id=1, /127.0.0.1:5801->/127.0.0.1:55530, qualifier=null, endpoint=[127.0.0.1]:55530, remoteUuid=4138a9cc-a37f-4e06-8ffa-2c5cfd93a0b9, alive=false, connectionType=JVM, planeIndex=-1] closed. Reason: Connection closed by the other side
+2026-05-15 15:24:57,210 INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - hz.client_1 [seatunnel-555222] [5.1] Removed connection to endpoint: [localhost]:5801:2f79b540-3ecd-4a64-99bc-11fbaccebfd9, connection: ClientConnection{alive=false, connectionId=1, channel=NioChannel{/127.0.0.1:55530->localhost/127.0.0.1:5801}, remoteAddress=[localhost]:5801, lastReadTime=2026-05-15 15:24:57.207, lastWriteTime=2026-05-15 15:24:57.192, closedTime=2026-05-15 15:24:57.210, connected server version=5.1}
+2026-05-15 15:24:57,211 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-555222] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is CLIENT_DISCONNECTED
+2026-05-15 15:24:57,211 INFO  com.hazelcast.client.impl.ClientEndpointManager - [localhost]:5801 [seatunnel-555222] [5.1] Destroying ClientEndpoint{connection=Connection[id=1, /127.0.0.1:5801->/127.0.0.1:55530, qualifier=null, endpoint=[127.0.0.1]:55530, remoteUuid=4138a9cc-a37f-4e06-8ffa-2c5cfd93a0b9, alive=false, connectionType=JVM, planeIndex=-1], clientUuid=4138a9cc-a37f-4e06-8ffa-2c5cfd93a0b9, clientName=hz.client_1, authenticated=true, clientVersion=5.1, creationTime=1778829895772, latest clientAttributes=lastStatisticsCollectionTime=1778829895819,enterprise=false,clientType=JVM,clientVersion=5.1,clusterConnectionTimestamp=1778829895762,clientAddress=127.0.0.1,clientName=hz.client_1,credentials.principal=null,os.committedVirtualMemorySize=0,os.freePhysicalMemorySize=5374685184,os.freeSwapSpaceSize=0,os.maxFileDescriptorCount=0,os.openFileDescriptorCount=0,os.processCpuTime=0,os.systemLoadAverage=-1.0,os.totalPhysicalMemorySize=16962326528,os.totalSwapSpaceSize=0,runtime.availableProcessors=32,runtime.freeMemory=206633296,runtime.maxMemory=536870912,runtime.totalMemory=268435456,runtime.uptime=3018,runtime.usedMemory=61802160, labels=[]}
+2026-05-15 15:24:57,213 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-555222] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is SHUTDOWN
+2026-05-15 15:24:57,213 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - Closed SeaTunnel client......
+2026-05-15 15:24:57,213 INFO  com.hazelcast.core.LifecycleService - [localhost]:5801 [seatunnel-555222] [5.1] [localhost]:5801 is SHUTTING_DOWN
+2026-05-15 15:24:57,215 INFO  com.hazelcast.internal.partition.impl.MigrationManager - [localhost]:5801 [seatunnel-555222] [5.1] Shutdown request of Member [localhost]:5801 - 2f79b540-3ecd-4a64-99bc-11fbaccebfd9 this is handled
+2026-05-15 15:24:57,217 INFO  com.hazelcast.instance.impl.Node - [localhost]:5801 [seatunnel-555222] [5.1] Shutting down connection manager...
+2026-05-15 15:24:57,218 INFO  com.hazelcast.instance.impl.Node - [localhost]:5801 [seatunnel-555222] [5.1] Shutting down node engine...
+2026-05-15 15:24:57,224 INFO  org.apache.seatunnel.engine.core.classloader.DefaultClassLoaderService - close classloader service
+2026-05-15 15:24:57,224 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-555222] [5.1] Event forward thread interrupted
+2026-05-15 15:24:58,693 INFO  com.hazelcast.instance.impl.NodeExtension - [localhost]:5801 [seatunnel-555222] [5.1] Destroying node NodeExtension.
+2026-05-15 15:24:58,693 INFO  com.hazelcast.instance.impl.Node - [localhost]:5801 [seatunnel-555222] [5.1] Hazelcast Shutdown is completed in 1478 ms.
+2026-05-15 15:24:58,693 INFO  com.hazelcast.core.LifecycleService - [localhost]:5801 [seatunnel-555222] [5.1] [localhost]:5801 is SHUTDOWN
+2026-05-15 15:24:58,693 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - Closed HazelcastInstance ......
+2026-05-15 15:24:58,693 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - Closed metrics executor service ......
+2026-05-15 15:24:58,693 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - run shutdown hook because get close signal
+
+==================================================
+  ✓ 任务执行完成！
+==================================================
+
+============================================================
+  数据同步与Git仓库管理工具
+============================================================
+
+
+请选择功能模块：
+  1) 数据同步（SeaTunnel 配置向导）
+  2) Git 仓库同步
+  3) 退出
+请选择 [1-3] [默认：3]: 1
+
+============================================================
+  SeaTunnel 数据采集配置向导
+============================================================
+
+【步骤 1/5】选择数据源类型
+
+选择数据源类型:
+  1) MySQL 数据库
+  2) HTTP API
+  3) 达梦数据库
+  4) 测试模式 (使用 FakeSource)
+请选择 [1-4] [默认：1]:
+
+✓ 数据源：MySQL 数据库
+
+【步骤 2/5】配置源 MySQL 数据库
+
+作业名称 [默认：MySQL_to_MySQL_Sync]:
+选择作业模式:
+  1) STREAMING (实时同步)
+  2) BATCH (批量同步)
+请选择 [1-2] [默认：1]: 2
+并行度 [默认：1]: 
+--- 配置源数据库 ---
+
+源 MySQL 主机地址 [默认：127.0.0.1]:
+源 MySQL 端口 [默认：3306]: 
+源 MySQL 用户名： root
+源 MySQL 密码： 
+
+可用的数据库：
+  1) seatunnel_demo
+  2) seatunnel_manager
+  3) seatunnel_prod
+  4) seatunnel_target
+  5) seatunnel_test
+  6) target
+  7) target_test
+  8) test
+  9) test_db
+
+请选择数据库 [1-9] 或输入数据库名： 8
+✓ 已选择数据库：test
+
+正在测试 MySQL 连接...
+✓ 端口 3306 可访问
+✓ 数据库连接成功
+
+数据库 'test' 中的表：
+  1) users
+
+请选择表 [1-1] 或输入表名： 1
+✓ 已选择表：users
+【步骤 3/5】配置目标 MySQL 数据库
+
+--- 配置目标数据库 ---
+
+目标 MySQL 主机地址 [默认：127.0.0.1]:
+目标 MySQL 端口 [默认：3306]: 
+目标 MySQL 用户名： root
+目标 MySQL 密码： 
+
+可用的数据库：
+  1) seatunnel_demo
+  2) seatunnel_manager
+  3) seatunnel_prod
+  4) seatunnel_target
+  5) seatunnel_test
+  6) target
+  7) target_test
+  8) test
+  9) test_db
+
+请选择数据库 [1-9] 或输入数据库名： 6
+✓ 已选择数据库：target
+
+正在测试 MySQL 连接...
+✓ 端口 3306 可访问
+✓ 数据库连接成功
+
+数据库 'target' 中的表：
+  1) api_users
+  2) api_users_raw
+  3) apiiii
+  4) source
+  5) test
+  6) test_1
+  7) testtable
+  8) users
+  9) usersssss
+
+请选择表 [1-9] 或输入表名： 6
+✓ 已选择表：test_1
+
+发现同步历史记录！
+上次同步配置：test.users->target.test_1
+是否使用上次的字段映射配置？[y/N]: y
+✓ 使用历史字段映射配置
+
+验证目标表结构...
+【步骤 5/5】确认并执行
+
+
+========== 配置确认 ==========
+作业名称: MySQL_to_MySQL_Sync
+作业模式: BATCH
+并行度: 1
+
+源数据源:
+  类型: MySQL 数据库
+  主机: 127.0.0.1:3306
+  数据库: test
+  表: users
+
+目标数据源:
+  类型: MySQL 数据库
+  主机: 127.0.0.1:3306
+  数据库: target
+  表: test_1
+===============================
+
+确认以上配置并执行？[Y/n]: y
+
+✓ 配置文件已生成：config\MySQL_to_MySQL_Sync.conf
+
+
+========== 生成的配置文件内容 ==========
+# ============================================
+# SeaTunnel 配置（自动生成）
+# 生成时间：2026-05-15 15:28:14
+# ============================================
+
+env {
+  job.mode = "BATCH"
+  job.name = "MySQL_to_MySQL_Sync"
+  parallelism = 1
+}
+
+source {
+  Jdbc {
+    url = "jdbc:mysql://127.0.0.1:3306/test?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai"
+    driver = "com.mysql.cj.jdbc.Driver"
+    user = "root"
+    password = "qwer123."
+    query = "SELECT "user_id" AS "id", "username" AS "username", "email" AS "email", "age" AS "age", "city" AS "city", "status" AS "status", "created_at" AS "created_at" FROM `test`.`users`"
+  }
+}
+
+sink {
+  Jdbc {
+    url = "jdbc:mysql://127.0.0.1:3306/target?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true"
+    driver = "com.mysql.cj.jdbc.Driver"
+    user = "root"
+    password = "qwer123."
+    database = "target"
+    table = "test_1"
+    batch_size = 100
+    generate_sink_sql = true
+    save_mode = "upsert"
+    primary_keys = "id"
+  }
+}
+
+===========================================
+
+准备执行 SeaTunnel 任务...
+
+找到 SeaTunnel: D:\software\apache-seatunnel-2.3.5\bin\seatunnel.cmd
+
+执行命令：D:\software\apache-seatunnel-2.3.5\bin\seatunnel.cmd --config "config/MySQL_to_MySQL_Sync.conf" -m local
+
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+5月 15, 2026 3:28:14 下午 com.hazelcast.internal.config.AbstractConfigLocator
+信息: Loading configuration 'D:\software\apache-seatunnel-2.3.5\config\seatunnel.yaml' from System property 'seatunnel.config'
+5月 15, 2026 3:28:14 下午 com.hazelcast.internal.config.AbstractConfigLocator
+信息: Using configuration file at D:\software\apache-seatunnel-2.3.5\config\seatunnel.yaml
+5月 15, 2026 3:28:14 下午 org.apache.seatunnel.engine.common.config.SeaTunnelConfig
+信息: seatunnel.home is D:\software\apache-seatunnel-2.3.5
+5月 15, 2026 3:28:14 下午 com.hazelcast.internal.config.AbstractConfigLocator
+信息: Loading configuration 'D:\software\apache-seatunnel-2.3.5\config\hazelcast.yaml' from System property 'hazelcast.config'
+5月 15, 2026 3:28:14 下午 com.hazelcast.internal.config.AbstractConfigLocator
+信息: Using configuration file at D:\software\apache-seatunnel-2.3.5\config\hazelcast.yaml
+5月 15, 2026 3:28:14 下午 com.hazelcast.internal.config.AbstractConfigLocator
+信息: Loading configuration 'D:\software\apache-seatunnel-2.3.5\config\hazelcast-client.yaml' from System property 'hazelcast.client.config'
+5月 15, 2026 3:28:14 下午 com.hazelcast.internal.config.AbstractConfigLocator
+信息: Using configuration file at D:\software\apache-seatunnel-2.3.5\config\hazelcast-client.yaml        
+5月 15, 2026 3:28:14 下午 com.hazelcast.instance.impl.HazelcastInstanceFactory
+警告: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2026-05-15 15:28:14,901 WARN  com.hazelcast.instance.AddressPicker - [LOCAL] [seatunnel-190118] [5.1] You configured your member address as host name. Please be aware of that your dns can be spoofed. Make sure that your dns configurations are correct.
+2026-05-15 15:28:14,906 INFO  com.hazelcast.instance.AddressPicker - [LOCAL] [seatunnel-190118] [5.1] Resolving domain name 'localhost' to address(es): [127.0.0.1, 0:0:0:0:0:0:0:1]
+2026-05-15 15:28:14,906 INFO  com.hazelcast.instance.AddressPicker - [LOCAL] [seatunnel-190118] [5.1] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1]
+2026-05-15 15:28:14,922 INFO  org.apache.seatunnel.engine.server.SeaTunnelServer - SeaTunnel server start...
+2026-05-15 15:28:14,927 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel-190118] [5.1] Based on Hazelcast IMDG version: 5.1.0 (20220228 - 21f20e7)
+2026-05-15 15:28:14,928 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel-190118] [5.1] Cluster name: seatunnel-190118
+2026-05-15 15:28:14,928 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel-190118] [5.1]
+
+ _____               _____                             _
+/  ___|             |_   _|                           | |
+\ `--.   ___   __ _   | |   _   _  _ __   _ __    ___ | |
+ `--. \ / _ \ / _` |  | |  | | | || '_ \ | '_ \  / _ \| |
+/\__/ /|  __/| (_| |  | |  | |_| || | | || | | ||  __/| |
+\____/  \___| \__,_|  \_/   \__,_||_| |_||_| |_| \___||_|
+
+
+2026-05-15 15:28:14,928 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel-190118] [5.1] Copyright ? 2021-2022 The Apache Software Foundation. Apache SeaTunnel, SeaTunnel, and its feather logo are trademarks of The Apache Software Foundation.
+2026-05-15 15:28:14,928 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel-190118] [5.1] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed.
+To enable integrity checker do one of the following:
+  - Change member config using Java API: config.setIntegrityCheckerEnabled(true);
+  - Change XML/YAML configuration property: Set hazelcast.integrity-checker.enabled to true
+  - Add system property: -Dhz.integritychecker.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_INTEGRITYCHECKER_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2026-05-15 15:28:14,930 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel-190118] [5.1] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2026-05-15 15:28:15,318 INFO  com.hazelcast.system.security - [localhost]:5801 [seatunnel-190118] [5.1] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2026-05-15 15:28:15,359 INFO  com.hazelcast.instance.impl.Node - [localhost]:5801 [seatunnel-190118] [5.1] Using TCP/IP discovery
+2026-05-15 15:28:15,360 WARN  com.hazelcast.cp.CPSubsystem - [localhost]:5801 [seatunnel-190118] [5.1] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2026-05-15 15:28:15,473 INFO  org.apache.seatunnel.engine.core.classloader.DefaultClassLoaderService - start classloader service
+5月 15, 2026 3:28:15 下午 com.hazelcast.internal.config.AbstractConfigLocator
+信息: Loading configuration 'D:\software\apache-seatunnel-2.3.5\config\seatunnel.yaml' from System property 'seatunnel.config'
+5月 15, 2026 3:28:15 下午 com.hazelcast.internal.config.AbstractConfigLocator
+信息: Using configuration file at D:\software\apache-seatunnel-2.3.5\config\seatunnel.yaml
+5月 15, 2026 3:28:15 下午 com.hazelcast.internal.config.AbstractConfigLocator
+信息: Loading configuration 'D:\software\apache-seatunnel-2.3.5\config\hazelcast.yaml' from System property 'hazelcast.config'
+5月 15, 2026 3:28:15 下午 com.hazelcast.internal.config.AbstractConfigLocator
+信息: Using configuration file at D:\software\apache-seatunnel-2.3.5\config\hazelcast.yaml
+2026-05-15 15:28:15,487 WARN  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] The Node is not ready yet, Node state STARTING,looking forward to the next scheduling
+2026-05-15 15:28:15,488 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] Created new BusWork : 2140617236
+2026-05-15 15:28:15,549 WARN  org.apache.seatunnel.engine.server.service.slot.DefaultSlotService - failed send heartbeat to resource manager, will retry later. this address: [localhost]:5801
+2026-05-15 15:28:15,550 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel-190118] [5.1]
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                   0
+taskCount                 :                   0
+***********************************************
+
+2026-05-15 15:28:15,568 INFO  com.hazelcast.internal.diagnostics.Diagnostics - [localhost]:5801 [seatunnel-190118] [5.1] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2026-05-15 15:28:15,571 INFO  com.hazelcast.core.LifecycleService - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5801 is STARTING
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5829 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5810 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5813 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5806 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5821 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5819 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5808 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5804 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5825 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5814 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5802 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5820 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5823 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5815 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5817 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5822 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5807 is added to the blacklist.
+2026-05-15 15:28:15,624 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5824 is added to the blacklist.
+2026-05-15 15:28:15,626 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5809 is added to the blacklist.
+2026-05-15 15:28:15,626 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5830 is added to the blacklist.
+2026-05-15 15:28:15,626 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5803 is added to the blacklist.
+2026-05-15 15:28:15,634 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5812 is added to the blacklist.
+2026-05-15 15:28:15,634 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5811 is added to the blacklist.
+2026-05-15 15:28:15,634 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5826 is added to the blacklist.
+2026-05-15 15:28:15,634 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5816 is added to the blacklist.
+2026-05-15 15:28:15,635 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5805 is added to the blacklist.
+2026-05-15 15:28:15,634 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5828 is added to the blacklist.
+2026-05-15 15:28:15,635 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5827 is added to the blacklist.
+2026-05-15 15:28:15,634 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5818 is added to the blacklist.
+2026-05-15 15:28:16,622 INFO  com.hazelcast.internal.cluster.ClusterService - [localhost]:5801 [seatunnel-190118] [5.1]
+
+Members {size:1, ver:1} [
+        Member [localhost]:5801 - 72b0f064-0f06-4df0-acf7-691d37eb4316 this
+]
+
+2026-05-15 15:28:16,628 INFO  com.hazelcast.core.LifecycleService - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5801 is STARTED
+2026-05-15 15:28:16,649 INFO  com.hazelcast.client.impl.spi.ClientInvocationService - hz.client_1 [seatunnel-190118] [5.1] Running with 2 response threads, dynamic=true
+2026-05-15 15:28:16,652 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel-190118] [5.1] This node become a new active master node, begin init coordinator service
+2026-05-15 15:28:16,659 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-190118] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is STARTING
+2026-05-15 15:28:16,659 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-190118] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is STARTED
+2026-05-15 15:28:16,668 INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - hz.client_1 [seatunnel-190118] [5.1] Trying to connect to cluster: seatunnel-190118
+2026-05-15 15:28:16,669 INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - hz.client_1 [seatunnel-190118] [5.1] Trying to connect to [localhost]:5801
+2026-05-15 15:28:16,680 INFO  com.hazelcast.client.impl.protocol.task.AuthenticationMessageTask - [localhost]:5801 [seatunnel-190118] [5.1] Received auth from Connection[id=1, /127.0.0.1:5801->/127.0.0.1:53301, qualifier=null, endpoint=[127.0.0.1]:53301, remoteUuid=9b4bcd07-e7d7-4781-bc29-4c31f7f5873e, alive=true, connectionType=JVM, planeIndex=-1], successfully authenticated, clientUuid: 9b4bcd07-e7d7-4781-bc29-4c31f7f5873e, client name: hz.client_1, client version: 5.1
+2026-05-15 15:28:16,681 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-190118] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is CLIENT_CONNECTED
+2026-05-15 15:28:16,681 INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - hz.client_1 [seatunnel-190118] [5.1] Authenticated with server [localhost]:5801:72b0f064-0f06-4df0-acf7-691d37eb4316, server version: 5.1, local address: /127.0.0.1:53301
+2026-05-15 15:28:16,683 INFO  com.hazelcast.internal.diagnostics.Diagnostics - hz.client_1 [seatunnel-190118] [5.1] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2026-05-15 15:28:16,689 INFO  com.hazelcast.client.impl.spi.ClientClusterService - hz.client_1 [seatunnel-190118] [5.1]
+
+Members [1] {
+        Member [localhost]:5801 - 72b0f064-0f06-4df0-acf7-691d37eb4316
+}
+
+2026-05-15 15:28:16,712 INFO  com.hazelcast.client.impl.statistics.ClientStatisticsService - Client statistics is enabled with period 5 seconds.
+2026-05-15 15:28:16,764 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel-190118] [5.1] Loaded event handlers: [org.apache.seatunnel.api.event.LoggingEventHandler@4609b465]
+2026-05-15 15:28:16,769 INFO  org.apache.seatunnel.engine.client.job.ClientJobExecutionEnvironment - add common jar in plugins :[]
+2026-05-15 15:28:16,781 INFO  com.hazelcast.internal.partition.impl.PartitionStateManager - [localhost]:5801 [seatunnel-190118] [5.1] Initializing cluster partition table arrangement...
+2026-05-15 15:28:16,786 INFO  org.apache.seatunnel.core.starter.utils.ConfigBuilder - Loading config file from path: config\MySQL_to_MySQL_Sync.conf
+2026-05-15 15:28:16,829 INFO  org.apache.seatunnel.core.starter.utils.ConfigShadeUtils - Load config shade spi: [base64]
+2026-05-15 15:28:16,874 INFO  org.apache.seatunnel.core.starter.utils.ConfigBuilder - Parsed config file:
+
+{
+    "env" : {
+        "job.mode" : "BATCH",
+        "job.name" : "MySQL_to_MySQL_Sync",
+        "parallelism" : 1
+    },
+    "source" : [
+        {
+            "password" : "qwer123.",
+            "driver" : "com.mysql.cj.jdbc.Driver",
+            "query" : "SELECT user_id AS id, username AS username, email AS email, age AS age, city AS city, status AS status, created_at AS created_at FROM `test`.`users`",
+            "plugin_name" : "Jdbc",
+            "user" : "root",
+            "url" : "jdbc:mysql://127.0.0.1:3306/test?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai"
+        }
+    ],
+    "sink" : [
+        {
+            "password" : "qwer123.",
+            "database" : "target",
+            "batch_size" : 100,
+            "save_mode" : "upsert",
+            "primary_keys" : "id",
+            "driver" : "com.mysql.cj.jdbc.Driver",
+            "generate_sink_sql" : true,
+            "plugin_name" : "Jdbc",
+            "user" : "root",
+            "url" : "jdbc:mysql://127.0.0.1:3306/target?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true",
+            "table" : "test_1"
+        }
+    ]
+}
+
+2026-05-15 15:28:16,882 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Load SeaTunnelSink Plugin from D:\software\apache-seatunnel-2.3.5\connectors
+2026-05-15 15:28:16,887 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Discovery plugin jar for: PluginIdentifier{engineType='seatunnel', pluginType='source', pluginName='Jdbc'} at: file:/D:/software/apache-seatunnel-2.3.5/connectors/connector-jdbc-2.3.5.jar
+2026-05-15 15:28:16,888 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Discovery plugin jar for: PluginIdentifier{engineType='seatunnel', pluginType='sink', pluginName='Jdbc'} at: file:/D:/software/apache-seatunnel-2.3.5/connectors/connector-jdbc-2.3.5.jar
+2026-05-15 15:28:16,892 INFO  org.apache.seatunnel.engine.core.parse.MultipleTableJobConfigParser - start generating all sources.
+2026-05-15 15:28:16,927 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.utils.JdbcCatalogUtils - Loading catalog tables for catalog : class org.apache.seatunnel.connectors.seatunnel.jdbc.catalog.mysql.MySqlCatalog
+2026-05-15 15:28:17,047 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.catalog.AbstractJdbcCatalog - Catalog MySQL established connection to jdbc:mysql://127.0.0.1:3306/test?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+2026-05-15 15:28:17,065 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.utils.JdbcCatalogUtils - Loaded catalog table : default.default.default, JdbcSourceTable(tablePath=default.default.default, query=SELECT user_id AS id, username AS username, email AS email, age AS age, city AS city, status AS status, created_at AS created_at FROM `test`.`users`, partitionColumn=null, partitionNumber=10, partitionStart=null, partitionEnd=null, catalogTable=CatalogTable{tableId=jdbc_catalog.default.default.default, tableSchema=TableSchema(columns=[PhysicalColumn(super=Column(name=id, dataType=INT, columnLength=null, scale=null, nullable=false, defaultValue=null, comment=null, sourceType=INT, options=null, isUnsigned=false, isZeroFill=false, bitLen=0, longColumnLength=null)), PhysicalColumn(super=Column(name=username, dataType=STRING, columnLength=200, scale=null, nullable=false, defaultValue=null, comment=null, sourceType=VARCHAR, options=null, isUnsigned=false, isZeroFill=false, bitLen=1600, longColumnLength=200)), PhysicalColumn(super=Column(name=email, dataType=STRING, columnLength=400, scale=null, nullable=false, defaultValue=null, comment=null, sourceType=VARCHAR, options=null, isUnsigned=false, isZeroFill=false, bitLen=3200, longColumnLength=400)), PhysicalColumn(super=Column(name=age, dataType=INT, columnLength=null, scale=null, nullable=true, defaultValue=null, comment=null, sourceType=INT, options=null, isUnsigned=false, isZeroFill=false, bitLen=0, longColumnLength=null)), PhysicalColumn(super=Column(name=city, dataType=STRING, columnLength=200, scale=null, nullable=true, defaultValue=null, comment=null, sourceType=VARCHAR, options=null, isUnsigned=false, isZeroFill=false, bitLen=1600, longColumnLength=200)), PhysicalColumn(super=Column(name=status, dataType=TINYINT, columnLength=null, scale=null, nullable=true, defaultValue=null, comment=null, sourceType=TINYINT, options=null, isUnsigned=false, isZeroFill=false, bitLen=0, longColumnLength=null)), PhysicalColumn(super=Column(name=created_at, dataType=TIMESTAMP, columnLength=null, scale=0, nullable=true, defaultValue=null, comment=null, sourceType=TIMESTAMP, options=null, isUnsigned=false, isZeroFill=false, bitLen=0, longColumnLength=null))], primaryKey=null, constraintKeys=[]), options={}, partitionKeys=[], comment='', catalogName='jdbc_catalog'})
+2026-05-15 15:28:17,066 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.utils.JdbcCatalogUtils - Loaded 1 catalog tables for catalog : class org.apache.seatunnel.connectors.seatunnel.jdbc.catalog.mysql.MySqlCatalog
+2026-05-15 15:28:17,068 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.catalog.AbstractJdbcCatalog - Catalog MySQL closing
+2026-05-15 15:28:17,068 INFO  org.apache.seatunnel.api.table.factory.FactoryUtil - get the CatalogTable from source Jdbc: jdbc_catalog.default.default.default
+2026-05-15 15:28:17,072 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Load SeaTunnelSource Plugin from D:\software\apache-seatunnel-2.3.5\connectors
+2026-05-15 15:28:17,078 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Discovery plugin jar for: PluginIdentifier{engineType='seatunnel', pluginType='source', pluginName='Jdbc'} at: file:/D:/software/apache-seatunnel-2.3.5/connectors/connector-jdbc-2.3.5.jar
+2026-05-15 15:28:17,079 INFO  org.apache.seatunnel.engine.core.parse.MultipleTableJobConfigParser - start generating all transforms.
+2026-05-15 15:28:17,079 INFO  org.apache.seatunnel.engine.core.parse.MultipleTableJobConfigParser - start generating all sinks.
+2026-05-15 15:28:17,083 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Load SeaTunnelSink Plugin from D:\software\apache-seatunnel-2.3.5\connectors
+2026-05-15 15:28:17,085 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Discovery plugin jar for: PluginIdentifier{engineType='seatunnel', pluginType='sink', pluginName='Jdbc'} at: file:/D:/software/apache-seatunnel-2.3.5/connectors/connector-jdbc-2.3.5.jar
+2026-05-15 15:28:17,087 WARN  org.apache.seatunnel.api.configuration.util.ConfigUtil - Option 'primary_keys' is a List, and it is recommended to configure it as ["string1","string2"]; we will only use ',' to split the String into a list.
+2026-05-15 15:28:17,089 WARN  org.apache.seatunnel.api.configuration.util.ConfigUtil - Option 'primary_keys' is a List, and it is recommended to configure it as ["string1","string2"]; we will only use ',' to split the String into a list.
+2026-05-15 15:28:17,097 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.catalog.AbstractJdbcCatalog - Catalog MySQL established connection to jdbc:mysql://127.0.0.1:3306/target?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true
+2026-05-15 15:28:17,099 INFO  org.apache.seatunnel.api.sink.SaveModeExecuteWrapper - Executing save mode for table: target.test_1, with SchemaSaveMode: CREATE_SCHEMA_WHEN_NOT_EXIST, DataSaveMode: APPEND_DATA using Catalog: MySQL
+2026-05-15 15:28:17,103 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.catalog.AbstractJdbcCatalog - Catalog MySQL closing
+2026-05-15 15:28:17,134 INFO  org.apache.seatunnel.engine.client.job.ClientJobProxy - Start submit job, job id: 1107570130553929729, with plugin jar [file:/D:/software/apache-seatunnel-2.3.5/connectors/connector-jdbc-2.3.5.jar]
+2026-05-15 15:28:17,146 INFO  org.apache.seatunnel.engine.server.resourcemanager.AbstractResourceManager - Init ResourceManager
+2026-05-15 15:28:17,147 INFO  org.apache.seatunnel.engine.server.resourcemanager.AbstractResourceManager - initWorker...
+2026-05-15 15:28:17,147 INFO  org.apache.seatunnel.engine.server.resourcemanager.AbstractResourceManager - initWorker live nodes: [[localhost]:5801]
+2026-05-15 15:28:17,149 INFO  org.apache.seatunnel.engine.server.resourcemanager.AbstractResourceManager - registerWorker: {[localhost]:5801=WorkerProfile(address=[localhost]:5801, profile=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=536870912}}, unassignedResource=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=536870912}}, assignedSlots=[], unassignedSlots=[])}
+2026-05-15 15:28:17,159 INFO  org.apache.seatunnel.engine.server.master.JobMaster - in batch mode, the 'checkpoint.interval' configuration of env is missing, so checkpoint will be disabled
+2026-05-15 15:28:17,159 INFO  org.apache.seatunnel.engine.server.master.JobMaster - Init JobMaster for Job MySQL_to_MySQL_Sync (1107570130553929729)
+2026-05-15 15:28:17,159 INFO  org.apache.seatunnel.engine.server.master.JobMaster - Job MySQL_to_MySQL_Sync (1107570130553929729) needed jar urls [file:/D:/software/apache-seatunnel-2.3.5/connectors/connector-jdbc-2.3.5.jar]
+2026-05-15 15:28:17,159 INFO  org.apache.seatunnel.engine.core.classloader.DefaultClassLoaderService - Create classloader for job 1107570130553929729 with jars [file:/D:/software/apache-seatunnel-2.3.5/connectors/connector-jdbc-2.3.5.jar]
+2026-05-15 15:28:17,175 INFO  org.apache.seatunnel.engine.core.classloader.DefaultClassLoaderService - Release classloader for job 1107570130553929729 with jars [file:/D:/software/apache-seatunnel-2.3.5/connectors/connector-jdbc-2.3.5.jar]
+2026-05-15 15:28:17,539 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - Create CheckpointCoordinator for job(1@1107570130553929729) with plan(CheckpointPlan(pipelineId=1, pipelineSubtasks=[TaskLocation{taskGroupLocation=TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=1}, taskID=20000, index=0}, TaskLocation{taskGroupLocation=TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000}, taskID=40000, index=0}, TaskLocation{taskGroupLocation=TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000}, taskID=50000, index=0}], startingSubtasks=[TaskLocation{taskGroupLocation=TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=1}, taskID=20000, index=0}], pipelineActions={ActionStateKey(name=ActionStateKey - pipeline-1 [Source[0]-Jdbc])=1, ActionStateKey(name=ActionStateKey - pipeline-1 [Sink[0]-Jdbc-MultiTableSink])=1}, subtaskActions={TaskLocation{taskGroupLocation=TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=1}, taskID=20000, index=0}=[(ActionStateKey(name=ActionStateKey - pipeline-1 [Source[0]-Jdbc]), -1)], TaskLocation{taskGroupLocation=TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000}, taskID=40000, index=0}=[(ActionStateKey(name=ActionStateKey - pipeline-1 [Source[0]-Jdbc]), 0)], TaskLocation{taskGroupLocation=TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000}, taskID=50000, index=0}=[(ActionStateKey(name=ActionStateKey - pipeline-1 [Sink[0]-Jdbc-MultiTableSink]), 0)]}))
+2026-05-15 15:28:17,539 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - The task Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SourceTask (1/1)] is in state CREATED when init state future
+2026-05-15 15:28:17,539 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - The task Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SplitEnumerator (1/1)] is in state CREATED when init state future
+2026-05-15 15:28:17,539 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job MySQL_to_MySQL_Sync (1107570130553929729) state process is start
+2026-05-15 15:28:17,542 INFO  org.apache.seatunnel.engine.client.job.ClientJobProxy - Submit job finished, job id: 1107570130553929729, job name: MySQL_to_MySQL_Sync
+2026-05-15 15:28:17,543 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job MySQL_to_MySQL_Sync (1107570130553929729) turned from state CREATED to SCHEDULED.
+2026-05-15 15:28:17,544 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)] state process is start
+2026-05-15 15:28:17,546 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)] turned from state CREATED to SCHEDULED.
+2026-05-15 15:28:17,559 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)] turned from state SCHEDULED to DEPLOYING.
+2026-05-15 15:28:17,559 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SplitEnumerator (1/1)] state process is start
+2026-05-15 15:28:17,561 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SplitEnumerator (1/1)] turned from state CREATED to DEPLOYING.
+2026-05-15 15:28:17,564 WARN  org.apache.seatunnel.engine.client.job.JobMetricsRunner - Failed to get job metrics summary, it maybe first-run
+2026-05-15 15:28:17,566 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] received deploying task executionId [1107570133825486849]
+2026-05-15 15:28:17,567 INFO  org.apache.seatunnel.engine.core.classloader.DefaultClassLoaderService - Create classloader for job 1107570130553929729 with jars [file:/D:/software/apache-seatunnel-2.3.5/connectors/connector-jdbc-2.3.5.jar]
+2026-05-15 15:28:17,572 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] deploying task TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=1}, executionId [1107570133825486849]
+2026-05-15 15:28:17,572 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] deploying TaskGroup TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=1} init success
+2026-05-15 15:28:17,575 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] deploying TaskGroup TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=1} success
+2026-05-15 15:28:17,576 INFO  org.apache.seatunnel.engine.server.task.SourceSplitEnumeratorTask - starting seatunnel source split enumerator task, source name: pipeline-1 [Source[0]-Jdbc]
+2026-05-15 15:28:17,576 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SplitEnumerator (1/1)] turned from state DEPLOYING to RUNNING.
+2026-05-15 15:28:17,577 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SplitEnumerator (1/1)] current state equals target state: RUNNING, skip
+2026-05-15 15:28:17,577 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SourceTask (1/1)] state process is start
+2026-05-15 15:28:17,577 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SourceTask (1/1)] turned from state CREATED to DEPLOYING.
+2026-05-15 15:28:17,585 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.ChunkSplitter - Switch to dynamic chunk splitter
+2026-05-15 15:28:17,587 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] received deploying task executionId [1107570133825552385]
+2026-05-15 15:28:17,595 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] deploying task TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000}, executionId [1107570133825552385]
+2026-05-15 15:28:17,595 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] deploying TaskGroup TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000} init success
+2026-05-15 15:28:17,595 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] deploying TaskGroup TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000} success
+2026-05-15 15:28:17,595 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SourceTask (1/1)] turned from state DEPLOYING to RUNNING.
+2026-05-15 15:28:17,597 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SourceTask (1/1)] current state equals target state: RUNNING, skip
+2026-05-15 15:28:17,597 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)] turned from state DEPLOYING to RUNNING.
+2026-05-15 15:28:17,598 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job MySQL_to_MySQL_Sync (1107570130553929729) turned from state SCHEDULED to RUNNING.
+2026-05-15 15:28:17,600 INFO  org.apache.seatunnel.engine.server.task.TransformSeaTunnelTask - starting seatunnel transform task, index 0
+2026-05-15 15:28:17,603 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.ChunkSplitter - Switch to dynamic chunk splitter
+2026-05-15 15:28:17,605 INFO  org.apache.seatunnel.engine.server.task.SourceSeaTunnelTask - starting seatunnel source task, index 0
+2026-05-15 15:28:17,610 INFO  org.apache.seatunnel.connectors.seatunnel.common.multitablesink.MultiTableSinkWriter - init multi table sink writer, queue size: 1
+2026-05-15 15:28:17,712 INFO  org.apache.seatunnel.engine.server.task.SourceSplitEnumeratorTask - received reader register, readerID: TaskLocation{taskGroupLocation=TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000}, taskID=40000, index=0}
+2026-05-15 15:28:17,712 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Register reader 0 to JdbcSourceSplitEnumerator.
+2026-05-15 15:28:17,714 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - checkpoint is disabled, because in batch mode and 'checkpoint.interval' of env is missing.
+2026-05-15 15:28:17,789 INFO  org.apache.seatunnel.engine.server.task.SourceSplitEnumeratorTask - received enough reader, starting enumerator...
+2026-05-15 15:28:17,789 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Starting split enumerator.
+2026-05-15 15:28:17,790 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Splitting table default.default.default.
+2026-05-15 15:28:17,790 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.ChunkSplitter - Start splitting table default.default.default into chunks...
+2026-05-15 15:28:17,791 WARN  org.apache.seatunnel.connectors.seatunnel.jdbc.source.ChunkSplitter - No split key found for table default.default.default
+2026-05-15 15:28:17,791 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.ChunkSplitter - Split table default.default.default into 1 chunks, time cost: 1ms.
+2026-05-15 15:28:17,791 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - Split table default.default.default into 1 splits.
+2026-05-15 15:28:17,794 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceSplitEnumerator - No more splits to assign. Sending NoMoreSplitsEvent to reader [0].
+2026-05-15 15:28:17,828 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.source.JdbcSourceReader - Closed the bounded jdbc source
+2026-05-15 15:28:17,828 WARN  org.apache.seatunnel.shade.com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2026-05-15 15:28:17,828 INFO  org.apache.seatunnel.shade.com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-15 15:28:17,836 INFO  org.apache.seatunnel.shade.com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-15 15:28:17,842 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.internal.executor.FieldNamedPreparedStatement - PrepareStatement sql is:
+INSERT INTO `target`.`test_1` (`id`, `username`, `email`, `age`, `city`, `status`, `created_at`) VALUES (?, ?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE `id`=VALUES(`id`), `username`=VALUES(`username`), `email`=VALUES(`email`), `age`=VALUES(`age`), `city`=VALUES(`city`), `status`=VALUES(`status`), `created_at`=VALUES(`created_at`)
+
+2026-05-15 15:28:17,844 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.internal.executor.FieldNamedPreparedStatement - PrepareStatement sql is:
+DELETE FROM `target`.`test_1` WHERE `id` = ?
+
+2026-05-15 15:28:17,905 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - wait checkpoint completed: 9223372036854775807
+2026-05-15 15:28:17,945 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - pending checkpoint(9223372036854775807/1@1107570130553929729) notify finished!
+2026-05-15 15:28:17,945 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - start notify checkpoint completed, job id: 1107570130553929729, pipeline id: 1, checkpoint id:9223372036854775807
+2026-05-15 15:28:17,951 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - start clean pending checkpoint cause CheckpointCoordinator completed.
+2026-05-15 15:28:17,952 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - Turn checkpoint_state_1107570130553929729_1 state from null to FINISHED
+2026-05-15 15:28:18,006 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] taskDone, taskId = 20000, taskGroup = TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=1}
+2026-05-15 15:28:18,007 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] Task TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=1} complete with state FINISHED
+2026-05-15 15:28:18,007 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel-190118] [5.1] Received task end from execution TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=1}, state FINISHED
+2026-05-15 15:28:18,009 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SplitEnumerator (1/1)] turned from state RUNNING to FINISHED.
+2026-05-15 15:28:18,009 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SplitEnumerator (1/1)] state process is stopped
+2026-05-15 15:28:18,009 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SplitEnumerator (1/1)] future complete with state FINISHED
+2026-05-15 15:28:18,032 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] taskDone, taskId = 40000, taskGroup = TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000}
+2026-05-15 15:28:18,034 INFO  org.apache.seatunnel.connectors.seatunnel.jdbc.sink.JdbcMultiTableResourceManager - start close connection poolHikariPool-1
+2026-05-15 15:28:18,034 INFO  org.apache.seatunnel.shade.com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-15 15:28:18,036 INFO  org.apache.seatunnel.shade.com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-15 15:28:18,037 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] taskDone, taskId = 50000, taskGroup = TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000}
+2026-05-15 15:28:18,037 INFO  org.apache.seatunnel.engine.core.classloader.DefaultClassLoaderService - Release classloader for job 1107570130553929729 with jars [file:/D:/software/apache-seatunnel-2.3.5/connectors/connector-jdbc-2.3.5.jar]
+2026-05-15 15:28:18,042 INFO  org.apache.seatunnel.engine.core.classloader.DefaultClassLoaderService - recycle classloader for thread BlockingWorker-TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000}
+2026-05-15 15:28:18,042 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] Task TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000} complete with state FINISHED
+2026-05-15 15:28:18,043 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel-190118] [5.1] Received task end from execution TaskGroupLocation{jobId=1107570130553929729, pipelineId=1, taskGroupId=30000}, state FINISHED
+2026-05-15 15:28:18,044 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SourceTask (1/1)] turned from state RUNNING to FINISHED.
+2026-05-15 15:28:18,045 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SourceTask (1/1)] state process is stopped
+2026-05-15 15:28:18,045 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-Jdbc]-SourceTask (1/1)] future complete with state FINISHED
+2026-05-15 15:28:18,045 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)] will end with state FINISHED
+2026-05-15 15:28:18,045 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)] turned from state RUNNING to FINISHED.
+2026-05-15 15:28:18,065 INFO  org.apache.seatunnel.engine.server.master.JobMaster - release the pipeline Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)] resource
+2026-05-15 15:28:18,066 INFO  org.apache.seatunnel.engine.server.service.slot.DefaultSlotService - received slot release request, jobID: 1107570130553929729, slot: SlotProfile{worker=[localhost]:5801, slotID=1, ownerJobID=1107570130553929729, assigned=true, resourceProfile=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=0}}, sequence='6699e5ae-3967-4f57-94c1-81278f5b3187'}
+2026-05-15 15:28:18,066 INFO  org.apache.seatunnel.engine.server.service.slot.DefaultSlotService - received slot release request, jobID: 1107570130553929729, slot: SlotProfile{worker=[localhost]:5801, slotID=2, ownerJobID=1107570130553929729, assigned=true, resourceProfile=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=0}}, sequence='6699e5ae-3967-4f57-94c1-81278f5b3187'}
+2026-05-15 15:28:18,066 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)] state process is stop
+2026-05-15 15:28:18,066 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job MySQL_to_MySQL_Sync (1107570130553929729), Pipeline: [(1/1)] future complete with state FINISHED
+2026-05-15 15:28:18,066 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job MySQL_to_MySQL_Sync (1107570130553929729) turned from state RUNNING to FINISHED.
+2026-05-15 15:28:18,067 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job MySQL_to_MySQL_Sync (1107570130553929729) state process is stop
+2026-05-15 15:28:18,075 INFO  org.apache.seatunnel.engine.client.job.ClientJobProxy - Job (1107570130553929729) end with state FINISHED
+2026-05-15 15:28:18,092 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - 
+***********************************************
+           Job Statistic Information
+***********************************************
+Start Time                : 2026-05-15 15:28:16
+End Time                  : 2026-05-15 15:28:18
+Total Time(s)             :                   1
+Total Read Count          :                   8
+Total Write Count         :                   8
+Total Failed Count        :                   0
+***********************************************
+
+2026-05-15 15:28:18,092 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-190118] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is SHUTTING_DOWN
+2026-05-15 15:28:18,094 INFO  com.hazelcast.internal.server.tcp.TcpServerConnection - [localhost]:5801 [seatunnel-190118] [5.1] Connection[id=1, /127.0.0.1:5801->/127.0.0.1:53301, qualifier=null, endpoint=[127.0.0.1]:53301, remoteUuid=9b4bcd07-e7d7-4781-bc29-4c31f7f5873e, alive=false, connectionType=JVM, planeIndex=-1] closed. Reason: Connection closed by the other side
+2026-05-15 15:28:18,094 INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - hz.client_1 [seatunnel-190118] [5.1] Removed connection to endpoint: [localhost]:5801:72b0f064-0f06-4df0-acf7-691d37eb4316, connection: ClientConnection{alive=false, connectionId=1, channel=NioChannel{/127.0.0.1:53301->localhost/127.0.0.1:5801}, remoteAddress=[localhost]:5801, lastReadTime=2026-05-15 15:28:18.089, lastWriteTime=2026-05-15 15:28:18.075, closedTime=2026-05-15 15:28:18.094, connected server version=5.1}
+2026-05-15 15:28:18,095 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-190118] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is CLIENT_DISCONNECTED
+2026-05-15 15:28:18,095 INFO  com.hazelcast.client.impl.ClientEndpointManager - [localhost]:5801 [seatunnel-190118] [5.1] Destroying ClientEndpoint{connection=Connection[id=1, /127.0.0.1:5801->/127.0.0.1:53301, qualifier=null, endpoint=[127.0.0.1]:53301, remoteUuid=9b4bcd07-e7d7-4781-bc29-4c31f7f5873e, alive=false, connectionType=JVM, planeIndex=-1], clientUuid=9b4bcd07-e7d7-4781-bc29-4c31f7f5873e, clientName=hz.client_1, authenticated=true, clientVersion=5.1, creationTime=1778830096677, latest clientAttributes=lastStatisticsCollectionTime=1778830096712,enterprise=false,clientType=JVM,clientVersion=5.1,clusterConnectionTimestamp=1778830096670,clientAddress=127.0.0.1,clientName=hz.client_1,credentials.principal=null,os.committedVirtualMemorySize=0,os.freePhysicalMemorySize=5508419584,os.freeSwapSpaceSize=0,os.maxFileDescriptorCount=0,os.openFileDescriptorCount=0,os.processCpuTime=0,os.systemLoadAverage=-1.0,os.totalPhysicalMemorySize=16962326528,os.totalSwapSpaceSize=0,runtime.availableProcessors=32,runtime.freeMemory=199950480,runtime.maxMemory=536870912,runtime.totalMemory=268435456,runtime.uptime=3028,runtime.usedMemory=68484976, labels=[]}
+2026-05-15 15:28:18,095 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-190118] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is SHUTDOWN
+2026-05-15 15:28:18,097 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - Closed SeaTunnel client......
+2026-05-15 15:28:18,097 INFO  com.hazelcast.core.LifecycleService - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5801 is SHUTTING_DOWN
+2026-05-15 15:28:18,099 INFO  com.hazelcast.internal.partition.impl.MigrationManager - [localhost]:5801 [seatunnel-190118] [5.1] Shutdown request of Member [localhost]:5801 - 72b0f064-0f06-4df0-acf7-691d37eb4316 this is handled
+2026-05-15 15:28:18,102 INFO  com.hazelcast.instance.impl.Node - [localhost]:5801 [seatunnel-190118] [5.1] Shutting down connection manager...
+2026-05-15 15:28:18,102 INFO  com.hazelcast.instance.impl.Node - [localhost]:5801 [seatunnel-190118] [5.1] Shutting down node engine...
+2026-05-15 15:28:18,110 INFO  org.apache.seatunnel.engine.core.classloader.DefaultClassLoaderService - close classloader service
+2026-05-15 15:28:18,110 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-190118] [5.1] Event forward thread interrupted
+2026-05-15 15:28:18,976 INFO  com.hazelcast.instance.impl.NodeExtension - [localhost]:5801 [seatunnel-190118] [5.1] Destroying node NodeExtension.
+2026-05-15 15:28:18,977 INFO  com.hazelcast.instance.impl.Node - [localhost]:5801 [seatunnel-190118] [5.1] Hazelcast Shutdown is completed in 879 ms.
+2026-05-15 15:28:18,977 INFO  com.hazelcast.core.LifecycleService - [localhost]:5801 [seatunnel-190118] [5.1] [localhost]:5801 is SHUTDOWN
+2026-05-15 15:28:18,977 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - Closed HazelcastInstance ......
+2026-05-15 15:28:18,977 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - Closed metrics executor service ......
+2026-05-15 15:28:18,977 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - run shutdown hook because get close signal
+
+==================================================
+  ✓ 任务执行完成！
+==================================================
+
+============================================================
+  数据同步与Git仓库管理工具
+============================================================
+
+
+
+mysql> use test;
+Database changed
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> CREATE TABLE users (
+    ->     user_id INT PRIMARY KEY AUTO_INCREMENT COMMENT '用户ID',
+    ->     username VARCHAR(50) NOT NULL COMMENT '用户名',
+    ->     email VARCHAR(100) NOT NULL COMMENT '邮箱',
+    ->     age INT COMMENT '年龄',
+    ->     city VARCHAR(50) COMMENT '城市',
+    ->     status TINYINT DEFAULT 1 COMMENT '状态：1-启用，0-禁用',
+    ->     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    ->     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间'
+    -> ) COMMENT '用户测试表';
+Query OK, 0 rows affected (0.03 sec)
+
+mysql>
+mysql> -- 2. 插入测试数据
+mysql> INSERT INTO users (username, email, age, city, status) VALUES
+    -> ('张三', 'zhangsan@test.com', 25, '北京', 1),
+    -> ('李四', 'lisi@test.com', 30, '上海', 1),
+    -> ('王五', 'wangwu@test.com', 28, '广州', 0),
+    -> ('赵六', 'zhaoliu@test.com', 35, '深圳', 1),
+    -> ('小明', 'xiaoming@test.com', 22, '杭州', 1),
+    -> ('小红', 'xiaohong@test.com', 26, '成都', 1),
+    -> ('小刚', 'xiaogang@test.com', 29, '武汉', 0),
+    -> ('小丽', 'xiaoli@test.com', 24, '西安', 1);
+Query OK, 8 rows affected (0.01 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+mysql>
+mysql> -- 3. 查看所有数据
+mysql> SELECT * FROM users;
++---------+----------+-------------------+------+--------+--------+---------------------+---------------------+
+| user_id | username | email             | age  | city   | status | created_at          | updated_at          |
++---------+----------+-------------------+------+--------+--------+---------------------+---------------------+
+|       1 | 张三     | zhangsan@test.com |   25 | 北京   |      1 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       2 | 李四     | lisi@test.com     |   30 | 上海   |      1 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       3 | 王五     | wangwu@test.com   |   28 | 广州   |      0 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       4 | 赵六     | zhaoliu@test.com  |   35 | 深圳   |      1 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       5 | 小明     | xiaoming@test.com |   22 | 杭州   |      1 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       6 | 小红     | xiaohong@test.com |   26 | 成都   |      1 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       7 | 小刚     | xiaogang@test.com |   29 | 武汉   |      0 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       8 | 小丽     | xiaoli@test.com   |   24 | 西安   |      1 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
++---------+----------+-------------------+------+--------+--------+---------------------+---------------------+
+8 rows in set (0.00 sec)
+
+mysql> select * from target.test_1;
++------+----------+-------------------+------+--------+--------+---------------------+
+| id   | username | email             | age  | city   | status | created_at          |
++------+----------+-------------------+------+--------+--------+---------------------+
+|    1 | 张三     | zhangsan@test.com |   25 | 北京   |      1 | 2026-05-15 15:23:00 |
+|    2 | 李四     | lisi@test.com     |   30 | 上海   |      1 | 2026-05-15 15:23:00 |
+|    3 | 王五     | wangwu@test.com   |   28 | 广州   |      0 | 2026-05-15 15:23:00 |
+|    4 | 赵六     | zhaoliu@test.com  |   35 | 深圳   |      1 | 2026-05-15 15:23:00 |
+|    5 | 小明     | xiaoming@test.com |   22 | 杭州   |      1 | 2026-05-15 15:23:00 |
+|    6 | 小红     | xiaohong@test.com |   26 | 成都   |      1 | 2026-05-15 15:23:00 |
+|    7 | 小刚     | xiaogang@test.com |   29 | 武汉   |      0 | 2026-05-15 15:23:00 |
+|    8 | 小丽     | xiaoli@test.com   |   24 | 西安   |      1 | 2026-05-15 15:23:00 |
++------+----------+-------------------+------+--------+--------+---------------------+
+8 rows in set (0.00 sec)
+
+mysql> -- 1. 更新一条数据：将 user_id=1 的年龄改为 26，城市改为 '上海'
+mysql> UPDATE users
+    -> SET age = 26, city = '上海', updated_at = NOW()
+    -> WHERE user_id = 1;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql>
+mysql> -- 2. 插入一条数据：新增一个用户
+mysql> INSERT INTO users (username, email, age, city, status)
+    -> VALUES ('测试用户', 'testuser@test.com', 27, '南京', 1);
+Query OK, 1 row affected (0.01 sec)
+
+mysql>
+mysql> -- 3. 删除一条数据：删除 user_id=8 的用户（小丽）
+mysql> DELETE FROM users WHERE user_id = 8;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT * FROM users;
++---------+--------------+-------------------+------+--------+--------+---------------------+---------------------+
+| user_id | username     | email             | age  | city   | status | created_at          | updated_at          |
++---------+--------------+-------------------+------+--------+--------+---------------------+---------------------+
+|       1 | 张三         | zhangsan@test.com |   26 | 上海   |      1 | 2026-05-15 15:23:00 | 2026-05-15 15:26:45 |
+|       2 | 李四         | lisi@test.com     |   30 | 上海   |      1 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       3 | 王五         | wangwu@test.com   |   28 | 广州   |      0 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       4 | 赵六         | zhaoliu@test.com  |   35 | 深圳   |      1 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       5 | 小明         | xiaoming@test.com |   22 | 杭州   |      1 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       6 | 小红         | xiaohong@test.com |   26 | 成都   |      1 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       7 | 小刚         | xiaogang@test.com |   29 | 武汉   |      0 | 2026-05-15 15:23:00 | 2026-05-15 15:23:00 |
+|       9 | 测试用户     | testuser@test.com |   27 | 南京   |      1 | 2026-05-15 15:26:45 | 2026-05-15 15:26:45 |
++---------+--------------+-------------------+------+--------+--------+---------------------+---------------------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT * FROM target.test_1;
++------+--------------+-------------------+------+--------+--------+---------------------+
+| id   | username     | email             | age  | city   | status | created_at          |
++------+--------------+-------------------+------+--------+--------+---------------------+
+|    1 | 张三         | zhangsan@test.com |   25 | 北京   |      1 | 2026-05-15 15:23:00 |
+|    2 | 李四         | lisi@test.com     |   30 | 上海   |      1 | 2026-05-15 15:23:00 |
+|    3 | 王五         | wangwu@test.com   |   28 | 广州   |      0 | 2026-05-15 15:23:00 |
+|    4 | 赵六         | zhaoliu@test.com  |   35 | 深圳   |      1 | 2026-05-15 15:23:00 |
+|    5 | 小明         | xiaoming@test.com |   22 | 杭州   |      1 | 2026-05-15 15:23:00 |
+|    6 | 小红         | xiaohong@test.com |   26 | 成都   |      1 | 2026-05-15 15:23:00 |
+|    7 | 小刚         | xiaogang@test.com |   29 | 武汉   |      0 | 2026-05-15 15:23:00 |
+|    8 | 小丽         | xiaoli@test.com   |   24 | 西安   |      1 | 2026-05-15 15:23:00 |
+|    1 | 张三         | zhangsan@test.com |   26 | 上海   |      1 | 2026-05-15 15:23:00 |
+|    2 | 李四         | lisi@test.com     |   30 | 上海   |      1 | 2026-05-15 15:23:00 |
+|    3 | 王五         | wangwu@test.com   |   28 | 广州   |      0 | 2026-05-15 15:23:00 |
+|    4 | 赵六         | zhaoliu@test.com  |   35 | 深圳   |      1 | 2026-05-15 15:23:00 |
+|    5 | 小明         | xiaoming@test.com |   22 | 杭州   |      1 | 2026-05-15 15:23:00 |
+|    6 | 小红         | xiaohong@test.com |   26 | 成都   |      1 | 2026-05-15 15:23:00 |
+|    7 | 小刚         | xiaogang@test.com |   29 | 武汉   |      0 | 2026-05-15 15:23:00 |
+|    9 | 测试用户     | testuser@test.com |   27 | 南京   |      1 | 2026-05-15 15:26:45 |
++------+--------------+-------------------+------+--------+--------+---------------------+
+16 rows in set (0.00 sec)
